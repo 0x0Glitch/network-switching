@@ -1,0 +1,1 @@
+{"address": "0x888dc43F8aF62eafb2B542e309B836CA9683E410", "network_id": "base-sepolia", "wallet_type": "private_key"}
