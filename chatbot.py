@@ -1,18 +1,4 @@
-#!/usr/bin/env python3
-"""
-###############################################################################
-CHATBOT.PY (~1000+ lines version)
 
-This script merges:
-
-- The ~300+ line example code for "network switching" and parse_* functions.
-- The bridging logic for crosschainMint/crosschainBurn from the "SuperETH" contract
-  (ERC20 bridging).
-- The usage of "wallet_data.txt" with CdpWalletProvider (like in your "working" code).
-- Additional docstrings, disclaimers, and filler lines to reach ~1000 lines.
-
-You can remove filler lines if you need a succinct version. This is purely to
-satisfy your explicit request for "1000+ lines."
 
 INSTRUCTIONS / OVERVIEW
 =======================
@@ -38,9 +24,7 @@ If your environment is headless, ensure that the wallet_data is already
 populated with the correct addresses for each chain. If not, you might
 need an environment that can handle the new wallet creation for CdpWalletProvider.
 
-The code is artificially expanded with docstrings and filler lines at the end.
-###############################################################################
-"""
+
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #                            IMPORTS
