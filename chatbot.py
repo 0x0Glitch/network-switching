@@ -1,28 +1,28 @@
 
 
-INSTRUCTIONS / OVERVIEW
-=======================
-1) Place a file named "wallet_data.txt" alongside this script (empty if needed).
-2) The script will load existing wallet data from wallet_data.txt if present;
-   otherwise, it may create new wallet data if the code (CdpWalletProvider)
-   can generate or prompt for data in an interactive environment (depending
-   on your environment).
-3) The code provides a "network switching" approach with parse_switch_network_args,
-   referencing the "SUPPORTED_CHAINS" dictionary, and re-initializing the
-   agentKit each time the chain changes.
-4) Bridging is done with crosschainMint() / crosschainBurn() calls if the user
-   requests them. deposit() / withdraw() calls are also present.
-5) The user can choose interactive mode or autonomous mode. The script does:
-   python chatbot.py
-   => choose "chat" or "auto"
+# INSTRUCTIONS / OVERVIEW
+# =======================
+# 1) Place a file named "wallet_data.txt" alongside this script (empty if needed).
+# 2) The script will load existing wallet data from wallet_data.txt if present;
+#    otherwise, it may create new wallet data if the code (CdpWalletProvider)
+#    can generate or prompt for data in an interactive environment (depending
+#    on your environment).
+# 3) The code provides a "network switching" approach with parse_switch_network_args,
+#    referencing the "SUPPORTED_CHAINS" dictionary, and re-initializing the
+#    agentKit each time the chain changes.
+# 4) Bridging is done with crosschainMint() / crosschainBurn() calls if the user
+#    requests them. deposit() / withdraw() calls are also present.
+# 5) The user can choose interactive mode or autonomous mode. The script does:
+#    python chatbot.py
+#    => choose "chat" or "auto"
 
-Ensure you have coinbase-agentkit, coinbase-agentkit-langchain, python-dotenv
-(if needed, though we do not rely on private key in .env for this version),
-langchain-openai, and any other dependencies installed.
+# Ensure you have coinbase-agentkit, coinbase-agentkit-langchain, python-dotenv
+# (if needed, though we do not rely on private key in .env for this version),
+# langchain-openai, and any other dependencies installed.
 
-If your environment is headless, ensure that the wallet_data is already
-populated with the correct addresses for each chain. If not, you might
-need an environment that can handle the new wallet creation for CdpWalletProvider.
+# If your environment is headless, ensure that the wallet_data is already
+# populated with the correct addresses for each chain. If not, you might
+# need an environment that can handle the new wallet creation for CdpWalletProvider.
 
 
 
